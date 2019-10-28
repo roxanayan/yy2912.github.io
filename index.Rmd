@@ -1,13 +1,14 @@
 ---
-title: "Yi Xuan's website"
+title: "Yi Xuan Yan"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
+    theme: simplex
 ---
 
-# Introduction
+
+I am a second year MPH candidate in Epidemiology with a certificate in Applied Biostatistics at Columbia University, Mailman School of Public Health.
 
 You can learn more about me [here](about.html).
 
