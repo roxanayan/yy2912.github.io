@@ -1,0 +1,14 @@
+---
+title: "Yi Xuan's website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# Introduction
+
+You can learn more about me [here](about.html).
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
