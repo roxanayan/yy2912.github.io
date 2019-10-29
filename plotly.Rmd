@@ -1,7 +1,6 @@
 ---
-title: "problem 2 - plotly"
-output: html_document
-    code_folding: hide
+title: "Yi Xuan Yan"
+code_folding: hide
 ---
 
 ```{r setup, include=FALSE}
@@ -35,13 +34,7 @@ filter(
   sample_n(5000)
 ```
 
-##Plotly scatterplot showing 
-```{r}
-  rest_inspec %>%
-  plot_ly(
-    x = ~lat, y = ~long, type = "scatter", mode = "markers",
-    color = ~score, text = ~text_label, alpha = 0.5)
-```
+
 
 
 ##Plotly boxplot showing distribution of scores among different cuisine descriptions 

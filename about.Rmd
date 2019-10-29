@@ -2,8 +2,12 @@
 title: "About me"
 ---
 
-hello
+Master of Public Health, Columbia University, Mailman School of Public Health 
+  
+  Epidemiology, Applied Statistics Certificate
 
-"     toc: true
-      toc_float: true
-      theme: simplex "
+Bacherlor of Science, The University of British Columbia
+  
+  Biology 
+  
+
