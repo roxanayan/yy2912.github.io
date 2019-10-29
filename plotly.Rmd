@@ -32,19 +32,10 @@ rest_inspec =
      action, boro, critical_flag, cuisine_description, dba, score, grade) %>%
 filter(
     !is.na(score), 
-    boro == "MANHATTAN") %>%
+    score %in% 10:50) %>%
   sample_n(5000)
 ```
 
-##Plotly scatterplot showing 
-```{r}
-rest_scatterplot=
-  rest_inspec %>%
-  
-  plot_ly(
-    x = ~, y = ~, type = "scatter", mode = "markers",
-    color = ~score, text = ~text_label, alpha = 0.5)
-```
 
 ##Plotly boxplot showing distribution of scores among different cuisine descriptions 
 
@@ -57,4 +48,15 @@ rest_boxplot =
   plot_ly(y = ~score, color = ~cuisine_description, type = "box",
           colors = "Set2")
 ```
+
+##Plotly barchart showing distribution of grade A restaurants in all boroughs
+
+```{r}
+rest_inspec %>% 
+  filter (grade == "A") %>%
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro, n)) %>% 
+  plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar")
+```
+
 
