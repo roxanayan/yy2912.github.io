@@ -9,3 +9,16 @@ output:
 
 
 
+```{r}
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+```{r}
+data ("rest_inspec")
+```
+
+
