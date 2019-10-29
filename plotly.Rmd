@@ -2,6 +2,7 @@
 title: "problem 2 - plotly"
 output: 
   html_document:
+    code_folding: hide
     toc: true
     toc_float: true
     theme: simplex
@@ -13,7 +14,7 @@ output:
 library(tidyverse)
 library(viridis)
 library(p8105.datasets)
-
+library(dplyr)
 library(plotly)
 ```
 
@@ -21,4 +22,39 @@ library(plotly)
 data ("rest_inspec")
 ```
 
+```{r}
+set.seed(1)
+
+data("rest_inspec") 
+rest_inspec = 
+  rest_inspec %>%
+  select(
+     action, boro, critical_flag, cuisine_description, dba, score, grade) %>%
+filter(
+    !is.na(score), 
+    boro == "MANHATTAN") %>%
+  sample_n(5000)
+```
+
+##Plotly scatterplot showing 
+```{r}
+rest_scatterplot=
+  rest_inspec %>%
+  
+  plot_ly(
+    x = ~, y = ~, type = "scatter", mode = "markers",
+    color = ~score, text = ~text_label, alpha = 0.5)
+```
+
+##Plotly boxplot showing distribution of scores among different cuisine descriptions 
+
+```{r}
+rest_boxplot =
+  rest_inspec %>% 
+  filter(
+    cuisine_description %in% c("Pizza", "Americans","Tapas","Polish","Chinese","Irish")) %>%
+  mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
+  plot_ly(y = ~score, color = ~cuisine_description, type = "box",
+          colors = "Set2")
+```
 
