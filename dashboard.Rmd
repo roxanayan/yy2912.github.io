@@ -1,19 +1,18 @@
 ---
-title: "Yi Xuan Yan"
-code_folding: hide
+title: "My dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r}
+library(flexdashboard)
 library(tidyverse)
 library(viridis)
 library(p8105.datasets)
 library(dplyr)
 library(plotly)
-library(yaml)
 ```
 
 ```{r}
@@ -34,19 +33,13 @@ filter(
   sample_n(5000)
 ```
 
-##Plotly scatterplot showing 
-```{r}
-  rest_inspec %>%
-  plot_ly(
-    x = ~lat, y = ~long, type = "scatter", mode = "markers",
-    color = ~score, text = ~text_label, alpha = 0.5)
-```
+Column {data-width=550}
+-----------------------------------------------------------------------
 
-
-##Plotly boxplot showing distribution of scores among different cuisine descriptions 
+### Chart A
 
 ```{r}
-  rest_inspec %>% 
+ rest_inspec %>% 
   filter(
     cuisine_description %in% c("Pizza", "Americans","Tapas","Polish","Chinese","Irish")) %>%
   mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
@@ -54,7 +47,10 @@ filter(
           colors = "Set2")
 ```
 
-##Plotly barchart showing distribution of grade A restaurants in all boroughs
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 rest_inspec %>% 
@@ -64,4 +60,9 @@ rest_inspec %>%
   plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar")
 ```
 
+### Chart C
+
+```{r}
+
+```
 
