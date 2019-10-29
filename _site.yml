@@ -5,12 +5,14 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "plotly"
+    - text: "Plotly examples"
       href: plotly.html
+    - text: "dashboard"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
-      href: mailto:<yy2912@cumc.columbia.edu>
+      href: mailto:<yy2912@cucm.columbia.edu>
     - icon: fa-github fa-lg
       href: http://github.com/roxanayan/
 output:
   html_document:
-    theme: simpelx
+  theme: simplex
