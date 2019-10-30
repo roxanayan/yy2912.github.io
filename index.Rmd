@@ -1,9 +1,8 @@
 ---
-title: "Yi Xuan Yan"
+title: "Welcome to Yi Xuan's website!"
 ---
 
 I am a second year MPH candidate in Epidemiology with a certificate in Applied Biostatistics at Columbia University, Mailman School of Public Health.
 
 You can learn more about me [here](about.html).
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)

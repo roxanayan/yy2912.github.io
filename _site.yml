@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "Plotly examples"
+    - text: "Plotly"
       href: plotly.html
     - text: "dashboard"
       href: dashboard.html

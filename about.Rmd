@@ -2,12 +2,45 @@
 title: "About me"
 ---
 
-Master of Public Health, Columbia University, Mailman School of Public Health 
-  
-  Epidemiology, Applied Statistics Certificate
+### Education 
 
-Bacherlor of Science, The University of British Columbia
-  
-  Biology 
-  
+
+**Columbia University, Mailman School of Public Health**
+
+Master of Public Health, Epidemiology; Applied Biostatistics Certificate    	Expected May 2020
+
+
+**The University of British Columbia**
+
+Bachelor of Science, Biology 					                          
+
+
+### Professional Experience
+
+
+**DataBase Shared Resources (DBSR), The Herbert Irving Comprehensive Cancer Center **
+
+*Practicum Student*									               New York, NY, 7/2019-9/2019
+
+*	As a Clinical Research Coordinator, responsible for patient recruitment across the Cancer Center and 
+
+*	Translate informed consent forms and questionnaires for the entire study into Chinese 
+
+*	Enter patient questionnaires with high accuracy and modify current questionnaire entry guidelines and specific questionnaire questions accordingly 
+
+*	Analyze a prospective cross-sectional survey using SAS to assess access and delivery of hereditary breast and ovarian cancer genetic counseling 
+
+
+**Centre for Heart Lung Innovation, St. Paul’s Hospital	**
+
+*Student Researcher*    		Vancouver, BC, 05/2016-10/2017
+
+*	Studied the mechanisms of current pharmacotherapies for Chronic Obstructive Pulmonary Disease (a $14b market) in collaboration with Boehringer Ingelheim
+
+* Collaborated with a team of six in experiment design/execution and performed subsequent data analytics on the results
+
+*	Secured $100K+ USD funding by authoring and presenting research reports regularly to funding companies
+
+*	Research abstract of up-to-date work accepted by the American Thoracic Society and European Respiratory Society  
+
 
