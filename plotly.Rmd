@@ -37,10 +37,8 @@ filter(
 ##Plotly violin plot showing score distribution of different grade levels 
 ```{r}
   rest_inspec %>%
-  mutate(name = forcats::fct_relevel(grade, c("A", "B", "C", "P", "Z"))) %>% 
-  ggplot(aes(x = grade, y = score)) + 
-  geom_violin(aes(fill = grade), color = "blue", alpha = .5) + 
-  theme(legend.position = "bottom")
+  mutate(grade = fct_relevel(as.character(grade))) %>% 
+  plot_ly(x = ~grade, y = ~score, type ="violin", color=~grade, alpha=0.5)
 ```
 
 
