@@ -63,6 +63,11 @@ rest_inspec %>%
 ### Chart C
 
 ```{r}
-
+  rest_inspec %>%
+  mutate(name = forcats::fct_relevel(grade, c("A", "B", "C", "P", "Z"))) %>% 
+  ggplot(aes(x = grade, y = score)) + 
+  geom_violin(aes(fill = grade), color = "blue", alpha = .5) + 
+  theme(legend.position = "bottom")
 ```
+
 

@@ -15,4 +15,4 @@ navbar:
       href: http://github.com/roxanayan/
 output:
   html_document:
-  theme: simplex
+  theme: paper

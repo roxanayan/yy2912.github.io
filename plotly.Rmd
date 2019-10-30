@@ -34,12 +34,13 @@ filter(
   sample_n(5000)
 ```
 
-##Plotly scatterplot showing 
+##Plotly violin plot showing score distribution of different grade levels 
 ```{r}
   rest_inspec %>%
-  plot_ly(
-    x = ~lat, y = ~long, type = "scatter", mode = "markers",
-    color = ~score, text = ~text_label, alpha = 0.5)
+  mutate(name = forcats::fct_relevel(grade, c("A", "B", "C", "P", "Z"))) %>% 
+  ggplot(aes(x = grade, y = score)) + 
+  geom_violin(aes(fill = grade), color = "blue", alpha = .5) + 
+  theme(legend.position = "bottom")
 ```
 
 
