@@ -1,10 +1,16 @@
 ---
 title: "Welcome to Yi Xuan's website!"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
+
+### Introduction
 
 I am a second year MPH candidate in Epidemiology with a certificate in Applied Biostatistics at Columbia University, Mailman School of Public Health.
 
 I spent the past summer doing my practicum in the Herbert Irving Comprehensive Cancer Center recruiting patients into the database and completing data analysis for a pilot study assessing providing genetic testing services at the oncology clinic as an alternative delivery model for patients with advanced breast or ovarian cancer. I'm currently working on my thesis investigating the false-positive rate of mammagram screening in high-risk patient population and how this might affect susequent followup screenings. 
 
+### About me
 You can learn more about me [here](about.html).
-
