@@ -38,15 +38,14 @@ filter(
   sample_n(5000)
 ```
 
-##Plotly violin plot showing score distribution of different grade levels 
+### Plotly chart A 
 ```{r}
   rest_inspec %>%
   mutate(grade = fct_relevel(as.character(grade))) %>% 
   plot_ly(x = ~grade, y = ~score, type ="violin", color=~grade, alpha=0.5)
 ```
 
-
-##Plotly boxplot showing distribution of scores among different cuisine descriptions 
+### Plotly chart B 
 
 ```{r}
   rest_inspec %>% 
@@ -57,7 +56,7 @@ filter(
           colors = "Set2")
 ```
 
-##Plotly barchart showing distribution of grade A restaurants in all boroughs
+### Plotly chart C
 
 ```{r}
 rest_inspec %>% 
