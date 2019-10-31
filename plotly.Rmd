@@ -1,6 +1,10 @@
 ---
-title: "Yi Xuan Yan"
-code_folding: hide
+title: "plotly"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}

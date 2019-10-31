@@ -36,7 +36,7 @@ filter(
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Chart A showing distribution of scores among different cuisine descriptions 
 
 ```{r}
  rest_inspec %>% 
@@ -50,7 +50,7 @@ Column {data-width=650}
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Chart B showing distribution of grade A restaurants in all boroughs
 
 ```{r}
 rest_inspec %>% 
@@ -60,7 +60,7 @@ rest_inspec %>%
   plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar")
 ```
 
-### Chart C
+### Chart C showing score distribution of different grade levels
 
 ```{r}
   rest_inspec %>%
